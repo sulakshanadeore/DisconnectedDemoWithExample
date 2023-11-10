@@ -30,13 +30,15 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnInsert = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.txtskillid = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.txttype = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnfind = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,14 +60,15 @@
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
-            // button2
+            // btnUpdate
             // 
-            this.button2.Location = new System.Drawing.Point(338, 312);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(160, 276);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 39);
+            this.btnUpdate.TabIndex = 2;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // txtskillid
             // 
@@ -119,18 +122,40 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Enter SkillType";
             // 
+            // btnfind
+            // 
+            this.btnfind.Location = new System.Drawing.Point(252, 276);
+            this.btnfind.Name = "btnfind";
+            this.btnfind.Size = new System.Drawing.Size(75, 39);
+            this.btnfind.TabIndex = 9;
+            this.btnfind.Text = "Find";
+            this.btnfind.UseVisualStyleBackColor = true;
+            this.btnfind.Click += new System.EventHandler(this.btnfind_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(343, 276);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 39);
+            this.btnDelete.TabIndex = 10;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnfind);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txttype);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.txtskillid);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
@@ -146,13 +171,15 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnInsert;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.TextBox txtskillid;
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.TextBox txttype;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnfind;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 
