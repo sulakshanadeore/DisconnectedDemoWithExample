@@ -46,11 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="DataViewDemo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataViewDemo.Designer.cs">
       <DependentUpon>DataViewDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dataViewDemoSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dataViewDemoSort.Designer.cs">
+      <DependentUpon>dataViewDemoSort.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -69,6 +76,9 @@
     </Compile>
     <EmbeddedResource Include="DataViewDemo.resx">
       <DependentUpon>DataViewDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dataViewDemoSort.resx">
+      <DependentUpon>dataViewDemoSort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
