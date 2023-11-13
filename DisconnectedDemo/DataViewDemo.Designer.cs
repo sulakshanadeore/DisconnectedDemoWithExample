@@ -39,7 +39,10 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDelete
@@ -50,6 +53,7 @@
             this.btnDelete.TabIndex = 21;
             this.btnDelete.Text = "Deleted Rows";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnfind
             // 
@@ -63,7 +67,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 204);
+            this.label3.Location = new System.Drawing.Point(355, 247);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 19;
@@ -72,7 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 165);
+            this.label2.Location = new System.Drawing.Point(360, 208);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 13);
             this.label2.TabIndex = 18;
@@ -81,7 +85,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 118);
+            this.label1.Location = new System.Drawing.Point(377, 161);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 17;
@@ -89,21 +93,21 @@
             // 
             // txttype
             // 
-            this.txttype.Location = new System.Drawing.Point(139, 204);
+            this.txttype.Location = new System.Drawing.Point(448, 247);
             this.txttype.Name = "txttype";
             this.txttype.Size = new System.Drawing.Size(100, 20);
             this.txttype.TabIndex = 16;
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(139, 162);
+            this.txtname.Location = new System.Drawing.Point(448, 205);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(100, 20);
             this.txtname.TabIndex = 15;
             // 
             // txtskillid
             // 
-            this.txtskillid.Location = new System.Drawing.Point(139, 111);
+            this.txtskillid.Location = new System.Drawing.Point(448, 154);
             this.txtskillid.Name = "txtskillid";
             this.txtskillid.Size = new System.Drawing.Size(100, 20);
             this.txtskillid.TabIndex = 14;
@@ -116,6 +120,7 @@
             this.btnUpdate.TabIndex = 13;
             this.btnUpdate.Text = "Modified Rows";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnInsert
             // 
@@ -130,16 +135,35 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(351, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(572, 39);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(404, 179);
+            this.dataGridView1.Size = new System.Drawing.Size(241, 242);
             this.dataGridView1.TabIndex = 11;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(12, 25);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(272, 204);
+            this.dataGridView2.TabIndex = 22;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(39, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 13);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "dataview_Row_Data";
             // 
             // DataViewDemo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnfind);
             this.Controls.Add(this.label3);
@@ -155,6 +179,7 @@
             this.Text = "DataViewDemo";
             this.Load += new System.EventHandler(this.DataViewDemo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,5 +198,7 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label4;
     }
 }
